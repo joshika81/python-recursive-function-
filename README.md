@@ -44,3 +44,41 @@ enter a number 5
 2
 1
 head(num)
+
+
+
+#tail recursion
+def tail(n):
+    if n==0:
+        return
+    print(n)    
+    tail(n-1)
+num=int(input("enter a number"))
+tail(num)
+..........output.............
+enter a number 6
+6
+5
+4
+3
+2
+1
+
+
+
+#tail recursion
+def tail(n):
+    if n==0:
+        return
+    tail(n-1)
+    print(n)
+num=int(input("enter a number"))
+tail(num)
+..........output.............
+enter a number 6
+1
+2
+3
+4
+5
+6
